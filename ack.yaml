@@ -2,11 +2,11 @@ apiVersion: "ecr.services.k8s.aws/v1alpha1"
 kind: Repository
 metadata:
     name: "repo"
-    namespace: test-system 
+    namespace: default 
 spec:
-  name: repo
+  name: test-repo
   encryptionConfiguration:
     encryptionType: AES256
   tags:
   - key: "me"
-    value: "yvo"
+    value: "Ivo"
